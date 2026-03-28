@@ -9,3 +9,20 @@ nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; 
 @media (max-width: 768px) {
     nav a { display: block; margin: 10px 0; }
 }
+
+/* Events Page Styling */
+.event {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Responsive Media Query for Events */
+@media (max-width: 768px) {
+    .event {
+        padding: 10px;
+        margin: 8px 0;
+    }
+}
