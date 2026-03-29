@@ -1,9 +1,93 @@
-/* Basic Setup */
-body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; }
-header { background: #004a99; color: white; padding: 20px; text-align: center; }
-nav { background: #333; padding: 10px; text-align: center; }
-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-.container { padding: 20px; max-width: 1100px; margin: auto; background: white; }
+/* Basic Setup & Global Styles */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+    line-height: 1.6; 
+    background-color: #f9f9f9; 
+    color: #333;
+}
+
+
+header { 
+    background: #004a99; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+h1 { color: #2c3e50; }
+
+nav { 
+    background: #333; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+nav a { 
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.container { 
+    padding: 20px; 
+    max-width: 1100px; 
+    margin: auto; 
+    background: white; 
+}
+
+section {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+/* Events Page Styling */
+.event {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* --- Responsive Media Queries (Assignment Requirement) --- */
+
+/* Mobile & Tablet Styles */
+
+@media (max-width: 768px) {
+    nav a { 
+        display: block; 
+        margin: 10px 0; 
+    }
+    
+    .event {
+        padding: 10px;
+        margin: 8px 0;
+    }
+
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+      .club-cards{
+        grid-template-columns: 1fr;
+    }
+
+}
+
 
 /* Club Cards Layout */
 
@@ -33,12 +117,6 @@ nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; 
     color:#004a99;
 }
 
-/* Responsive Media Query (Assignment Requirement) */
-@media (max-width: 768px) {
-    nav a { display: block; margin: 10px 0; }
-    .club-cards{
-        grid-template-columns: 1fr;
-    }
-}
+
 
 
