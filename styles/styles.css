@@ -5,6 +5,22 @@ nav { background: #333; padding: 10px; text-align: center; }
 nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
 .container { padding: 20px; max-width: 1100px; margin: auto; background: white; }
 
+
+/* Events Page Styling */
+.event {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* --- Responsive Media Queries (Assignment Requirement) --- */
+
+/* Mobile & Tablet Styles */
+@media (max-width: 768px) {
+    nav a { display: block; margin: 10px 0; }
+}
 /* Club Cards Layout */
 
 .club-cards{
@@ -39,6 +55,7 @@ nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; 
     .club-cards{
         grid-template-columns: 1fr;
     }
+
 }
 
 
