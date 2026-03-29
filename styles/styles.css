@@ -8,6 +8,7 @@ body {
     color: #333;
 }
 
+
 header { 
     background: #004a99; 
     color: white; 
@@ -45,6 +46,8 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+
+
 /* Events Page Styling */
 .event {
     border: 1px solid #ccc;
@@ -57,6 +60,7 @@ section {
 /* --- Responsive Media Queries (Assignment Requirement) --- */
 
 /* Mobile & Tablet Styles */
+
 @media (max-width: 768px) {
     nav a { 
         display: block; 
@@ -77,4 +81,42 @@ section {
         font-size: 22px;
         text-align: center;
     }
+
+      .club-cards{
+        grid-template-columns: 1fr;
+    }
+
 }
+
+
+/* Club Cards Layout */
+
+.club-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.club-card{
+    background: #eaf2ff;  
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #004a99;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.club-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.club-card h2{
+    margin-top:0;
+    color:#004a99;
+}
+
+
+
+
